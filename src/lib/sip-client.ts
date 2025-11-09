@@ -1,6 +1,6 @@
-import JsSIP from 'jssip';
-import type { SIPConfig } from '../types/sip';
-
+import JsSIP from "jssip";
+type RTCSession = InstanceType<typeof JsSIP.RTCSession>;
+const { UA } = JsSIP;
 // Enable debug logging
 JsSIP.debug.enable('JsSIP:*');
 
